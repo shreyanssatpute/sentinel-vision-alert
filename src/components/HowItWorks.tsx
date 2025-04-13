@@ -1,6 +1,7 @@
 
 import React from "react";
-import { Brain, Camera, Clock, Database, Map } from "lucide-react";
+import { Camera, Brain, Database } from "lucide-react";
+import SystemArchitecture from "./SystemArchitecture";
 
 const FeatureCard = ({ 
   icon: Icon, 
@@ -31,29 +32,19 @@ const HowItWorks = () => {
   const features = [
     {
       icon: Camera,
-      title: "Live Camera Monitoring",
-      description: "Process video frames to detect violent actions, capture snapshots, and fetch user's location."
+      title: "Detection",
+      description: "Process video frames to detect violent actions using OpenCV, MediaPipe, and YOLOv5."
     },
     {
       icon: Brain,
-      title: "Violence Detection Logic",
-      description: "Implemented with OpenCV, MediaPipe, and YOLOv5 to extract human keypoints and detect violent patterns."
-    },
-    {
-      icon: Clock,
-      title: "Event Cooldown Logic",
-      description: "Rate-limits automatic events to avoid duplicate reporting of the same incident."
+      title: "Processing",
+      description: "Extract human keypoints and detect violent patterns with advanced AI algorithms."
     },
     {
       icon: Database,
-      title: "Frontend Snapshot Capture",
-      description: "Takes canvas snapshots from video feed and encodes them as part of the event data."
-    },
-    {
-      icon: Map,
-      title: "JSONBin as Event Store",
-      description: "Stores events with timestamps, camera name, image URL, location, and status."
-    },
+      title: "Reporting",
+      description: "Store events with timestamps, camera name, image URL, location, and status in JSONBin."
+    }
   ];
 
   return (
@@ -64,7 +55,7 @@ const HowItWorks = () => {
           From detection to visualization, explore the end-to-end process of our violence detection system
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <FeatureCard 
               key={index} 
@@ -75,6 +66,8 @@ const HowItWorks = () => {
             />
           ))}
         </div>
+        
+        <SystemArchitecture />
       </div>
     </section>
   );

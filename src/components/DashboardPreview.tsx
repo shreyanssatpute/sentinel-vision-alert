@@ -85,7 +85,7 @@ const DashboardPreview = () => {
               <div key={event.id} className="bg-white rounded-xl shadow-sm overflow-hidden">
                 <div className="h-32 bg-black/10 relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-gray-400 text-sm">Event snapshot</span>
+                    <span className="text-gray-400 text-sm">Event {event.id}</span>
                   </div>
                   {event.isNew && (
                     <div className="absolute top-2 right-2">
@@ -108,10 +108,14 @@ const DashboardPreview = () => {
           </div>
           
           {/* Map Preview */}
-          <div className="h-64 bg-black/5 rounded-xl flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-8 w-8 text-gray-400 mx-auto mb-2" />
-              <span className="text-gray-500">Map view placeholder</span>
+          <div className="h-64 bg-gray-200 rounded-xl overflow-hidden relative">
+            <img 
+              src="public/lovable-uploads/591f6831-7e64-4282-a621-11e20d171c4f.png" 
+              alt="Map view with event locations" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-md text-sm">
+              Event Locations
             </div>
           </div>
         </div>
