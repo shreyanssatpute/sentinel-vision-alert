@@ -20,7 +20,7 @@ const HeroSection = () => {
             Powered by computer vision and geospatial intelligence. Detect violent actions from live video feed, report events instantly, and visualize them on a centralized dashboard.
           </p>
 
-          <div className="relative h-80 w-full max-w-3xl mt-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <div className="relative h-96 w-full max-w-3xl mt-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <HeroAnimation />
           </div>
         </div>

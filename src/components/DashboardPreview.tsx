@@ -98,7 +98,7 @@ const DashboardPreview = () => {
           </div>
           
           {/* Map Preview */}
-          <div className="h-[80vh] bg-gray-200 rounded-xl overflow-hidden relative">
+          <div className="h-[500px] bg-gray-200 rounded-xl overflow-hidden relative">
             <img 
               src="public/lovable-uploads/56a992de-93cb-4f5e-924a-021804fe0173.png" 
               alt="Map view with event locations" 
