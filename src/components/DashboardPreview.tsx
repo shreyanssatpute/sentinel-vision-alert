@@ -98,11 +98,11 @@ const DashboardPreview = () => {
           </div>
           
           {/* Map Preview */}
-          <div className="h-[500px] bg-gray-200 rounded-xl overflow-hidden relative">
+          <div className="h-[550px] bg-gray-200 rounded-xl overflow-hidden relative">
             <img 
-              src="public/lovable-uploads/56a992de-93cb-4f5e-924a-021804fe0173.png" 
+              src="public/lovable-uploads/49799fd6-a5a2-4ac6-8cc4-028af81f91ff.png" 
               alt="Map view with event locations" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
             <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-md text-sm">
               Event Locations
