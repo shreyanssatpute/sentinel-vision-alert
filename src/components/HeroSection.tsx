@@ -1,6 +1,5 @@
 
 import React from "react";
-import { AlertTriangle } from "lucide-react";
 import HeroAnimation from "./HeroAnimation";
 
 const HeroSection = () => {
@@ -11,12 +10,7 @@ const HeroSection = () => {
 
       {/* Hero content */}
       <div className="container mx-auto relative z-10">
-        <div className="flex flex-col items-center text-center">
-          <div className="flex items-center mb-6 animate-fade-in">
-            <AlertTriangle className="h-8 w-8 mr-2 text-red-500" />
-            <h2 className="text-xl font-medium text-red-500">Violence Detection & Reporting System</h2>
-          </div>
-          
+        <div className="flex flex-col items-center text-center">          
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-up">
             Real-time Violence<br /> 
             <span className="highlight-text">Detection Solution</span>
@@ -26,7 +20,7 @@ const HeroSection = () => {
             Powered by computer vision and geospatial intelligence. Detect violent actions from live video feed, report events instantly, and visualize them on a centralized dashboard.
           </p>
 
-          <div className="relative h-64 w-full max-w-3xl mt-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <div className="relative h-80 w-full max-w-3xl mt-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <HeroAnimation />
           </div>
         </div>

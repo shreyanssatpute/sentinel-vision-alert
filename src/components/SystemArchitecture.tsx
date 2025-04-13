@@ -7,7 +7,7 @@ const SystemArchitecture = () => {
       <h3 className="text-xl font-semibold text-center mb-6">System Architecture</h3>
       <div className="flex justify-center">
         <img 
-          src="public/lovable-uploads/d354502c-c8ca-4ce2-95f9-891614cddee2.png" 
+          src="public/lovable-uploads/a445489f-a979-4933-bd6e-008a528dfe7b.png" 
           alt="System Architecture Diagram" 
           className="max-w-full h-auto rounded-lg"
         />

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Bell, CheckCircle, Clock, Filter, MapPin, Search } from "lucide-react";
+import { Bell, CheckCircle, Clock, MapPin } from "lucide-react";
 
 const DashboardPreview = () => {
   // Mock event data
@@ -14,32 +14,9 @@ const DashboardPreview = () => {
   return (
     <section id="dashboard" className="py-20 px-6">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 animate-slide-up">Event Dashboard</h2>
-        <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-          A real-time dashboard for visualizing and managing detected events
-        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up">Event Dashboard Features</h2>
         
         <div className="max-w-5xl mx-auto glass-card p-6 rounded-2xl animate-slide-up" style={{ animationDelay: "0.2s" }}>
-          {/* Dashboard Header */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 pb-6 border-b">
-            <div>
-              <h3 className="text-xl font-semibold">Event Monitor</h3>
-              <p className="text-gray-500 text-sm">Showing latest events</p>
-            </div>
-            
-            <div className="flex items-center mt-4 md:mt-0 space-x-4">
-              <div className="flex items-center bg-white rounded-lg px-3 py-2 shadow-sm">
-                <Search className="h-4 w-4 text-gray-400 mr-2" />
-                <span className="text-gray-400 text-sm">Search events...</span>
-              </div>
-              
-              <button className="flex items-center bg-white rounded-lg px-3 py-2 shadow-sm">
-                <Filter className="h-4 w-4 text-gray-600 mr-2" />
-                <span className="text-gray-600 text-sm">Filter</span>
-              </button>
-            </div>
-          </div>
-          
           {/* Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-white p-4 rounded-xl shadow-sm">
@@ -78,6 +55,19 @@ const DashboardPreview = () => {
               </div>
             </div>
           </div>
+
+          {/* Locations Card */}
+          <div className="bg-white p-4 rounded-xl shadow-sm mb-8">
+            <div className="flex justify-between items-start">
+              <div>
+                <p className="text-gray-500 text-sm">Locations</p>
+                <p className="text-2xl font-semibold mt-1">36</p>
+              </div>
+              <div className="p-2 bg-blue-100 rounded-lg">
+                <MapPin className="h-5 w-5 text-blue-600" />
+              </div>
+            </div>
+          </div>
           
           {/* Events Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -108,9 +98,9 @@ const DashboardPreview = () => {
           </div>
           
           {/* Map Preview */}
-          <div className="h-64 bg-gray-200 rounded-xl overflow-hidden relative">
+          <div className="h-[80vh] bg-gray-200 rounded-xl overflow-hidden relative">
             <img 
-              src="public/lovable-uploads/591f6831-7e64-4282-a621-11e20d171c4f.png" 
+              src="public/lovable-uploads/56a992de-93cb-4f5e-924a-021804fe0173.png" 
               alt="Map view with event locations" 
               className="w-full h-full object-cover"
             />
